@@ -15,7 +15,7 @@ icons.forEach((icon) => {
 function handleLikeAction(e) {
   const likeButton = e.target;
   mimicServerCall()
-    .then(()=> {
+      .then(()=> {
       alterHeartAppearance(likeButton);
     })
     .catch((error) => {
